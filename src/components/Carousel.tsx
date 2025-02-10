@@ -76,7 +76,7 @@ export function CustomCarousel() {
                 key={imgIndex}
                 src={imgSrc}
                 alt={`Slide ${index + 1} Image ${imgIndex + 1}`}
-                className="md:h-[543px] md:w-[calc(50%-10px)] max-sm:h-[450px] max-sm:w-[calc(100%)] md:object-cover max-sm:object-contain transition-transform overflow-hidden duration-500 ease-in-out hover:scale-95"
+                className="md:h-[543px] md:w-[calc(50%-10px)] max-sm:h-[450px] max-sm:w-[calc(100%)] md:object-cover sm:object-contain max-sm:object-contain transition-transform overflow-hidden duration-500 ease-in-out hover:scale-95"
                 onMouseEnter={() => setIsPaused(true)}
                 onMouseLeave={() => setIsPaused(false)}
               />

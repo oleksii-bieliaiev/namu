@@ -48,9 +48,9 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose }) => {
           variants={menuVariants}
           transition={{ duration: 0.5 }}
           id="menu"
-          className='fixed flex flex-col lg:h-screen md:h-screen max-sm:h-screen z-50'>
-          <div className='grid lg:grid-cols-12 md:gap-8 max-sm:gap-x-4 bg-[#1A5A4C] lg:h-[233px] md:h-[225px] max-sm:h-[459px] md:grid-cols-11 sm:grid-cols-4 max-sm:grid-cols-3 lg:pt-[40px] lg:pr-[55px] md:pt-[40px] max-sm:pt-[30px] md:pr-[39px] max-sm:pr-[20px] sm:pr-[20px] lg:pl-[55px] md:pl-[39px] max-sm:pl-[20px] sm:pl-[20px] md:w-auto lg:pb-[40px] md:pb-[40px] max-sm:pb-[30px]  md:mx-0 sm:w-full sm:mx-auto max-sm:w-full max-sm:mx-auto '>
-            <div className='lg:col-start-1 lg:col-span-1 md:col-start-1 md:col-span-1 max-sm:col-start-1 max-sm:col-span-1 mt-0 mb-auto flex md:flex-col max-sm:flex-row lg:items-start md:justify-center max-sm:justify-start max-sm:items-center'>
+          className='fixed flex flex-col lg:h-screen md:h-screen sm:h-screen max-sm:h-screen w-full z-50'>
+          <div className='grid lg:grid-cols-12 md:gap-8 sm:gap-x-4 max-sm:gap-x-4 bg-[#1A5A4C] lg:h-[233px] md:h-[225px] sm:h-[459px] max-sm:h-[459px] md:grid-cols-11 sm:grid-cols-3 max-sm:grid-cols-3 lg:pt-[40px] lg:pr-[55px] md:pt-[40px] sm:pt-[30px] max-sm:pt-[30px] md:pr-[39px] max-sm:pr-[20px] sm:pr-[20px] lg:pl-[55px] md:pl-[39px] max-sm:pl-[20px] sm:pl-[20px] md:w-auto lg:pb-[40px] md:pb-[40px] sm:pb-[30px] max-sm:pb-[30px] md:mx-0 sm:w-full sm:mx-auto max-sm:w-full max-sm:mx-auto '>
+            <div className='lg:col-start-1 lg:col-span-1 md:col-start-1 md:col-span-1 max-sm:col-start-1 max-sm:col-span-1 mt-0 mb-auto flex md:flex-col sm:flex-row max-sm:flex-row lg:items-start md:justify-center sm:justify-start max-sm:justify-start max-sm:items-center'>
               <a
                 className="flex cursor-pointer pl-[4px] pt-[4px]"
                 onClick={handleClose}
@@ -68,8 +68,8 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose }) => {
               </a>
             </div>
 
-            <div className='lg:col-start-2 lg:col-span-2 md:col-start-2 md:col-span-1 max-sm:col-start-2 max-sm:col-span-1  flex flex-col items-center mt-0 max-sm:pb-2 mb-auto lg:justify-center md:justify-start max-sm:justify-start max-sm:translate-x-[-2rem] lg:ml-[25%]'>
-              <div className='flex flex-col w-full pb-[30px]'>
+            <div className='lg:col-start-2 lg:col-span-2 md:col-start-2 md:col-span-1 sm:col-start-2 sm:col-span-1 max-sm:col-start-2 max-sm:col-span-1  flex flex-col items-center mt-0 md:pb-0 sm:pb-2 max-sm:pb-2 mb-auto lg:justify-center md:justify-start sm:justify-start max-sm:justify-start max-sm:translate-x-[-2rem] lg:ml-[25%]'>
+              <div className='flex flex-col w-full pb-[20px]'>
                 <a
                   onClick={onClose}
                   href="#gallery"
@@ -91,7 +91,7 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose }) => {
               </div>
             </div>
 
-            <div className='lg:col-start-4 lg:col-span-2 md:col-start-4 md:col-span-1 max-sm:col-start-3 max-sm:col-span-1 flex flex-col items-end mt-0 max-sm:pb-2 mb-auto lg:justify-center  lg:ml-[25%] '>
+            <div className='lg:col-start-4 lg:col-span-2 md:col-start-4 md:col-span-1 sm:col-start-3 sm:col-span-1 max-sm:col-start-3 max-sm:col-span-1 flex flex-col items-end mt-0 md:pb-0 sm:pb-2 max-sm:pb-2 mb-auto lg:justify-center  lg:ml-[25%] '>
               <div className='flex flex-row w-full pb-[20px]'>
                 <a
                   onClick={onClose}
@@ -114,7 +114,7 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose }) => {
               </div>
             </div>
 
-            <div className='hidden lg:col-start-7 lg:col-span-1 md:col-start-5 md:col-span-1 md:flex max-sm:hidden flex-col lg:items-start lg:justify-start md:items-end'>
+            <div className='hidden lg:col-start-7 lg:col-span-1 md:col-start-5 md:col-span-1 md:flex sm:hidden max-sm:hidden flex-col lg:items-start lg:justify-start md:items-end'>
               <img
                 src="/line_3.svg"
                 alt="Image"
@@ -122,7 +122,7 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose }) => {
               />
             </div>
 
-            <div className='hidden max-sm:col-start-1 max-sm:col-span-3 max-sm:flex flex-row lg:items-start lg:justify-start md:items-end'>
+            <div className='hidden sm:col-start-1 sm:col-span-3 max-sm:col-start-1 max-sm:col-span-3 md:hidden sm:flex max-sm:flex flex-row lg:items-start lg:justify-start md:items-end'>
               <img
                 src="/line_4.svg"
                 alt="Image"
@@ -130,7 +130,7 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose }) => {
               />
             </div>
 
-            <div className='lg:col-start-8 lg:col-span-2 md:col-start-6 md:col-span-3 max-sm:col-start-1 max-sm:col-span-3 flex flex-col items-center mt-0 max-sm:mt-[24px] mb-auto lg:justify-center max-sm:justify-start md:ml-[10%] max-sm:items-start '>
+            <div className='lg:col-start-8 lg:col-span-2 md:col-start-6 md:col-span-3 sm:col-start-1 sm:col-span-3 max-sm:col-start-1 max-sm:col-span-3 flex flex-col items-center mt-0 md:mt-0 sm:mt-[24px] max-sm:mt-[24px] mb-auto lg:justify-center max-sm:justify-start md:ml-[10%] max-sm:items-start '>
               <p className='flex md:text-[14px] md:leading-[21px] max-sm:text-[14px] font-normal max-sm:leading-[21px] text-[#FFFFFF] ml-0 mr-auto font-flexsans'>Графік роботи</p>
 
               <div className='flex md:flex-row max-sm:flex-row w-full justify-start md:pt-[20px] max-sm:pt-[10px]'>
@@ -159,7 +159,7 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose }) => {
               </div>
             </div>
 
-            <div className='lg:col-start-10 lg:col-span-2 md:col-start-10 max-sm:col-start-1 max-sm:col-span-3 lg:translate-x-0 md:translate-x-[-30px] md:col-span-2 flex flex-col items-center mt-0 max-sm:mt-0 mb-auto lg:justify-center md:ml-[10%] max-sm:justify-start max-sm:items-start lg:pt-[42px] md:pt-[40px]'>
+            <div className='lg:col-start-10 lg:col-span-2 md:col-start-10 sm:col-start-1 sm:col-span-3  max-sm:col-start-1 max-sm:col-span-3 lg:translate-x-0 md:translate-x-[-30px] md:col-span-2 flex flex-col items-center mt-0 max-sm:mt-0 mb-auto lg:justify-center md:ml-[10%] max-sm:justify-start sm:items-start max-sm:items-start lg:pt-[42px] md:pt-[40px]'>
               <div className='flex md:flex-row md:w-[140px] max-sm:flex-row lg:w-full justify-start '>
                 <p className='pr-1 md:text-[14px] md:leading-[21px] max-sm:text-[14px] font-bold max-sm:leading-[21px] text-[#FFFFFF] font-flexsans'>Вихідні:</p>
                 <p className='md:text-[14px] md:leading-[21px] max-sm:text-[14px] font-normal max-sm:leading-[21px] text-[#FFFFFF] font-flexsans'>
