@@ -41,18 +41,18 @@ const Tickets: React.FC<TicketsProps> = ({ onClose }) => {
         {isSubmitted ? (
           
           <div className="text-center">
-            <h2 className="text-black text-2xl font-semibold mb-4 font-flexsans">Reservation Successful</h2>
-            <p className="text-gray-600 font-flexsans">Your museum ticket has been reserved successfully.</p>
+            <h2 className="text-black text-2xl font-semibold mb-4 font-flexsans">Зарезервовано</h2>
+            <p className="text-gray-600 font-flexsans">Твій білет був зарезервований.</p>
           </div>
         ) : (
           
           <>
-            <h2 className="text-black text-2xl font-semibold mb-6 font-flexsans">Museum Ticket Purchase</h2>
+            <h2 className="text-black text-2xl font-semibold mb-6 font-flexsans">Купити білет</h2>
             <form onSubmit={handleSubmit} className="flex flex-col w-full gap-4">
               <input
                 type="text"
                 name="name"
-                placeholder="Full Name"
+                placeholder="Ім'я та прізвище"
                 value={formData.name}
                 onChange={handleChange}
                 required
@@ -61,7 +61,7 @@ const Tickets: React.FC<TicketsProps> = ({ onClose }) => {
               <input
                 type="email"
                 name="email"
-                placeholder="Email Address"
+                placeholder="email"
                 value={formData.email}
                 onChange={handleChange}
                 required
@@ -84,7 +84,7 @@ const Tickets: React.FC<TicketsProps> = ({ onClose }) => {
               >
                 {[1, 2, 3, 4, 5].map((num) => (
                   <option key={num} value={num}>
-                    {num} Ticket{num > 1 ? "s" : ""}
+                    {num} Білет{num > 1 ? "а" : ""}
                   </option>
                 ))}
               </select>
@@ -92,7 +92,7 @@ const Tickets: React.FC<TicketsProps> = ({ onClose }) => {
                 type="submit"
                 className="bg-[#1A5A4C] text-white px-6 font-flexsans py-2 mt-4 hover:bg-[#154a3e] transition-all"
               >
-                Book Tickets
+                Резервувати
               </button>
             </form>
           </>

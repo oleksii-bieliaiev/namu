@@ -159,7 +159,7 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose }) => {
               </div>
             </div>
 
-            <div className='lg:col-start-10 lg:col-span-2 md:col-start-10 sm:col-start-1 sm:col-span-3  max-sm:col-start-1 max-sm:col-span-3 lg:translate-x-0 md:translate-x-[-30px] md:col-span-2 flex flex-col items-center mt-0 max-sm:mt-0 mb-auto lg:justify-center md:ml-[10%] max-sm:justify-start sm:items-start max-sm:items-start lg:pt-[42px] md:pt-[40px]'>
+            <div className='lg:col-start-10 lg:col-span-2 md:col-start-10 sm:col-start-1 sm:col-span-3  max-sm:col-start-1 max-sm:col-span-3 lg:translate-x-0 md:translate-x-[-50px] md:col-span-2 flex flex-col items-center mt-0 max-sm:mt-0 mb-auto lg:justify-center md:ml-[10%] max-sm:justify-start sm:items-start max-sm:items-start lg:pt-[42px] md:pt-[40px]'>
               <div className='flex md:flex-row md:w-[140px] max-sm:flex-row lg:w-full justify-start '>
                 <p className='pr-1 md:text-[14px] md:leading-[21px] max-sm:text-[14px] font-bold max-sm:leading-[21px] text-[#FFFFFF] font-flexsans'>Вихідні:</p>
                 <p className='md:text-[14px] md:leading-[21px] max-sm:text-[14px] font-normal max-sm:leading-[21px] text-[#FFFFFF] font-flexsans'>
