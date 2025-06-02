@@ -4,10 +4,8 @@ import Footer from '@/components/Footer';
 import Gallery from '@/components/Gallery';
 import RomAndClassics from '@/components/RomAndClassics';
 import Subscription from '@/components/Subscription';
-import dynamic from 'next/dynamic';
-
-const Header = dynamic(() => import('@/components/Header'), { ssr: false });
-const CurrentEvents  = dynamic(() => import('@/components/CurrentEvents'), { ssr: false });
+import Header from '@/components/Header';
+import CurrentEvents from '@/components/CurrentEvents';
 
 export default function Home() {
   return (
